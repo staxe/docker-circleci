@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-    apt-get install curl gcc python2.7 python-dev -y
+    apt-get install curl openssh-client gcc python2.7 python-dev -y
 
 RUN curl -LO https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py && \
